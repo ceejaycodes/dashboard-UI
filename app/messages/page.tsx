@@ -1,5 +1,5 @@
 'use client';
-import '../app/styles.scss';
+import '../../app/styles.scss'
 import Image from 'next/image';
 import * as React from 'react';
 import Link from "next/link";
@@ -23,42 +23,30 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import HomeIcon from '@mui/icons-material/Home';
 import WhatshotIcon from '@mui/icons-material/Whatshot';
 import GrainIcon from '@mui/icons-material/Grain';
-import DashCard from './components/card1';
 import { Poppins } from 'next/font/google';
-import Graph from '../public/images/Graph.svg';
-import Headphones from '../public/images/headphones.svg';
-import Gift from '../public/images/Gift.svg';
-import Category from '../public/images/Category.svg';
-import Bag from '../public/images/Bag.svg';
-import Setting from '../public/images/Setting.svg';
-import User from '../public/images/User.svg';
-import Folder from '../public/images/Folder.svg';
-import Chat from '../public/images/Chat.svg';
-import Log from '../public/images/logout.svg';
+import Graph from '../../public/images/Graph.svg';
+import Headphones from '../../public/images/headphones.svg';
+import Gift from '../../public/images/Gift.svg';
+import Category from '../../public/images/Category.svg';
+import Bag from '../../public/images/Bag.svg';
+import Setting from '../../public/images/Setting.svg';
+import User from '../../public/images/User.svg';
+import Folder from '../../public/images/Folder.svg';
+import Chat from '../../public/images/Chat.svg';
+import Log from '../../public/images/logout.svg';
 import { NextFont } from 'next/dist/compiled/@next/font';
-import Card from './components/card1';
-import DashCard2 from './components/card2';
-import DashCard3 from './components/card3';
-import Bottomchart from './components/bottomchart';
-import Piechart from './components/piechart';
-import Card4 from './components/card4';
-import Card5 from './components/card5';
-import Recent from './components/recent';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import avatar from '../public/images/avatar.png';
+import avatar from '../../public/images/avatar.png';
+
+
+
 
 
 
 const poppins: NextFont = Poppins({
-    weight: ["200","400","600"],
-    subsets: ['latin'] ,
+  weight: ["200","400","600"],
+  subsets: ['latin'] ,
 })
-
-
-// function handleClick(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
-//   event.preventDefault();
-//   console.info('You clicked a breadcrumb.');
-// }
 
 
 const IconBreadcrumbs: React.FC = ()=> {
@@ -84,11 +72,7 @@ const IconBreadcrumbs: React.FC = ()=> {
   );
 }
 
-
-
-
-
-const drawerWidth = '30rem';
+const drawerWidth = '6%';
 
 interface Props {
   /**
@@ -113,19 +97,19 @@ export default function ResponsiveDrawer(props: Props) {
     <Image
       priority
       src={Graph}
-      height={74}
-      width={34}
+      height={27}
+      width={27}
       alt="Metrix Logo"
     />
    
-    <span><h3 className={poppins.className}>Metrix</h3></span>
+    
     </div>
 
       <nav className='navbar'>
           <List>
           <ListItem  disablePadding>
           <Image className='navicn' src={Category} alt={'Dashboard'}/>
-          <Link className='navli' href={"/"}><ListItemText primary="Dashboard" /></Link>
+          <Link className='navli' href={"/"}></Link>
         
       </ListItem>
 
@@ -133,7 +117,7 @@ export default function ResponsiveDrawer(props: Props) {
           
           <Image className='navicn' src={Bag} alt={'Orders'}/>
           
-          <Link  className='navli' href={"/"}><ListItemText primary="Orders" /></Link>
+          <Link className='navli' href={"/"}></Link>
         
       </ListItem>
 
@@ -141,7 +125,7 @@ export default function ResponsiveDrawer(props: Props) {
 
           <Image className='navicn' src={User} alt={'Customers'}/>
 
-          <Link className='navli' href={"/"}><ListItemText primary="Customers" /></Link>
+          <Link className='navli' href={"/"}></Link>
         
       </ListItem>
 
@@ -149,14 +133,17 @@ export default function ResponsiveDrawer(props: Props) {
 
           <Image className='navicn' src={Folder} alt={'inventory'}/>
 
-          <Link className='navli' href={"/"}><ListItemText primary="Inventory" /></Link>
+          <Link className='navli' href={"/"}></Link>
         
       </ListItem>
           <ListItem  disablePadding>
 
           <Image className='navicn'  src={Chat} alt={'chats'}/>
+         
+        
 
-          <Link className='navli' href={"/"}><ListItemText primary="Conversations" /></Link>
+          <Link className='navli' href={"/"}></Link>
+          
         
       </ListItem>
 
@@ -164,7 +151,7 @@ export default function ResponsiveDrawer(props: Props) {
 
           <Image className='navicn'   src={Setting} alt={'settings'}/>
 
-          <Link style={{fontSize: '8px'}} className='navli' href={"/"}><ListItemText primary="Settings" /></Link>
+          <Link style={{fontSize: '8px'}} className='navli' href={"/"}></Link>
         
       </ListItem>
                 </List>
@@ -174,23 +161,21 @@ export default function ResponsiveDrawer(props: Props) {
 
       <nav className='helpnav'>
         <List className='helnavlist'>
-          <ListItem sx={{backgroundColor: "#efeff0" , height:"3rem", width:"25rem", borderRadius:"3rem", paddingBottom:"3rem", paddingTop:"2rem"}}  disablePadding>
+          <ListItem sx={{paddingRight:"",backgroundColor: "#efeff0" , paddingBottom:"9px",borderRadius:"12px"}}  disablePadding>
 
             <Image className='navicn'   src={Headphones} alt={'support'}/>
 
-            <Link style={{fontSize: '1.5rem'}} className='navli' href={"/"}><ListItemText primary="Contact Support" /></Link>
+            <Link style={{fontSize: '8px'}} className='navli' href={"/"}></Link>
 
         </ListItem>
 
-        <ListItem sx={{backgroundColor: "#fff5ea" , height:"7.3rem", width:"25.2rem", borderRadius:"12px", paddingBottom:"3.9rem"}}  disablePadding>
+        <ListItem sx={{backgroundColor: "#fff5ea" , borderRadius:"12px", paddingBottom:"9px"}}  disablePadding>
 
             <Image className='navicn'   src={Gift} alt={'gift'}/>
 
             <div className="gift-icon">
 
-            <Link style={{fontSize: '8px'}} className='navli' href={"/"}><ListItemText primary="Free Gift Awaits You!" /></Link>
-
-            <p>Upgrade Your Account</p>
+            <Link style={{fontSize: '8px'}} className='navli' href={"/"}></Link>
             </div>
 
         </ListItem>
@@ -199,7 +184,7 @@ export default function ResponsiveDrawer(props: Props) {
 
             <Image className='navicn'   src={Log} alt={'logout'}/>
 
-            <Link style={{fontSize: '8px'}} className='navli' href={"/"}><ListItemText primary="Logout" /></Link>
+            <Link style={{fontSize: '8px'}} className='navli' href={"/"}></Link>
 
         </ListItem>
 
@@ -218,40 +203,38 @@ export default function ResponsiveDrawer(props: Props) {
       <AppBar
         elevation={0}
         position="fixed"
+
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
         }}
       >
-        <Toolbar className="headbar" sx={{ml: {md: "28.5rem"}}}>
-          <IconButton
+        <Toolbar className="headbar" style={{marginLeft: "75px"}}>
+          {/* <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{  color: 'black', display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { sm: 'none' } }}
           >
-            <MenuIcon sx={{width: '3.8rem', height: '3.2rem'}} />
-          </IconButton>
+            <MenuIcon />
+          </IconButton> */}
           <span>
             <span className='headclas'>
-          <Typography sx={{display: { xs:'none' },color: 'black'}} variant="h5" noWrap component="h3">
+          <Typography sx={{color: 'black'}} variant="h5" noWrap component="div">
            Dashboard    
           </Typography>
 
-
-          <Box sx={{ml : {xs: '2.7rem',  md : '44rem', lg: '75.2rem', xl: '92rem'}}}>
-          <span className='secdash'>
-          <select style={{ marginTop: '0.5rem', height:"2.8rem" , width:"9.5rem", fontSize: '1.2rem',backgroundColor: "#fef5ea", border: 'none'}} name="cars" id="cars">
+          <span style={{marginRight:"-8.9rem"}}className='secdash'>
+          <select style={{padding:"12px", width:"155px" ,backgroundColor: "#fef5ea", borderRadius:"12px", border: 'none', marginTop:"-25px"}} name="cars" id="cars">
                     <option value="volvo">Nannys Shop</option>
                     <option value="saab">Saab</option>
                     <option value="opel">Opel</option>
                     <option value="audi">Audi</option>
                 </select>
-                <NotificationsIcon fontSize="large" sx={{marginTop:"1rem",color:"#5570f1", marginLeft:"1rem", marginRight:"1rem"}}/>
+                <NotificationsIcon sx={{color:"#5570f1"}}/>
                 <Image src={avatar} alt={"avatar"}/>
           </span>
-          </Box>
           </span>
           <IconBreadcrumbs/>
           </span>
@@ -297,34 +280,7 @@ export default function ResponsiveDrawer(props: Props) {
 
         <Toolbar />
     
-          <div className='section1'>
-            <DashCard />
-            <DashCard2/>
-            <DashCard3/>
-          </div>
-
-          <div className='section2'>
-            <div className='sec2div1'>
-              <div className='sec2div1box1'>
-                <div>
-                  <Piechart/>
-                </div>
-                <div className='spaninbox'>
-                  <span><Card4/></span>
-                  <span><Card5/></span>
-                </div>
-              </div>
-
-              <div className='sec2div1box2'>
-                <Bottomchart/>
-              </div>
-
-              </div> 
-{/*  */}
-             <div className='sec2div2'>
-              <Recent/>
-            </div>
-          </div>
+         
       </Box>
     </Box>
   );
