@@ -88,7 +88,8 @@ const IconBreadcrumbs: React.FC = ()=> {
 
 
 
-const drawerWidth = '30rem';
+// const drawerWidthmd = '20rem';
+// const drawerWidthlg = '28.8rem';
 
 interface Props {
   /**
@@ -218,12 +219,12 @@ export default function ResponsiveDrawer(props: Props) {
       <AppBar
         elevation={0}
         position="fixed"
-        sx={{
-          width: { sm: `calc(100% - ${drawerWidth}px)` },
-          ml: { sm: `${drawerWidth}px` },
-        }}
+        // sx={{
+        //   width: { sm: `calc(100% - ${drawerWidthmd})` , lg: `calc(100% - ${drawerWidthlg})` },
+        //   ml: { sm: `${drawerWidthmd}` , lg:`${drawerWidthmd}` },
+        // }}
       >
-        <Toolbar className="headbar" sx={{ml: {md: "28.5rem"}}}>
+        <Toolbar className="headbar" sx={{ml: {md : '27rem', lg: '53.2rem', xl: '117rem' }}}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -235,12 +236,12 @@ export default function ResponsiveDrawer(props: Props) {
           </IconButton>
           <span>
             <span className='headclas'>
-          <Typography sx={{display: { xs:'none' },color: 'black'}} variant="h5" noWrap component="h3">
+          <Typography sx={{display:{xs: 'none', md:'block'}, color: 'black'}} variant="h5" noWrap component="h3">
            Dashboard    
           </Typography>
 
 
-          <Box sx={{ml : {xs: '2.7rem',  md : '44rem', lg: '75.2rem', xl: '92rem'}}}>
+          <Box sx={{ml : {xs: '1rem',sm: '1rem',  md : '27rem', lg: '53.2rem', xl: '117rem'}}}>
           <span className='secdash'>
           <select style={{ marginTop: '0.5rem', height:"2.8rem" , width:"9.5rem", fontSize: '1.2rem',backgroundColor: "#fef5ea", border: 'none'}} name="cars" id="cars">
                     <option value="volvo">Nannys Shop</option>
@@ -260,7 +261,7 @@ export default function ResponsiveDrawer(props: Props) {
       
       <Box
         component="nav"
-        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
+        sx={{ width: { sm: "28rem" } }}
         aria-label="mailbox folders"
       >
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
@@ -274,7 +275,7 @@ export default function ResponsiveDrawer(props: Props) {
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: "30.2rem" },
           }}
         >
           {drawer}
@@ -283,7 +284,7 @@ export default function ResponsiveDrawer(props: Props) {
           variant="permanent"
           sx={{
             display: { xs: 'none', sm: 'block' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: { sm:"30.2rem", md:"28rem", lg:"30rem",} },
           }}
           open
         >
@@ -292,37 +293,38 @@ export default function ResponsiveDrawer(props: Props) {
       </Box>
       <Box
         component="main"
-        sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
+        sx={{ mt: '2rem', width: { xs:"40rem", md:"78rem", lg:"96rem", xl: "126rem" }, ml:{xs:"3.5rem", sm:"25rem", md:"29rem", lg:"32rem", xl: "32rem"}}}
+        // sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidthlg})` } }}
       >
 
         <Toolbar />
     
           <div className='section1'>
-            <DashCard />
+            {/* <DashCard />
             <DashCard2/>
-            <DashCard3/>
+            <DashCard3/> */}
           </div>
 
           <div className='section2'>
             <div className='sec2div1'>
               <div className='sec2div1box1'>
                 <div>
-                  <Piechart/>
+                  {/* <Piechart/> */}
                 </div>
                 <div className='spaninbox'>
-                  <span><Card4/></span>
-                  <span><Card5/></span>
+                  {/* <span><Card4/></span>
+                  <span><Card5/></span> */}
                 </div>
               </div>
 
               <div className='sec2div1box2'>
-                <Bottomchart/>
+                {/* <Bottomchart/> */}
               </div>
 
               </div> 
 {/*  */}
              <div className='sec2div2'>
-              <Recent/>
+              {/* <Recent/> */}
             </div>
           </div>
       </Box>
