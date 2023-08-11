@@ -55,6 +55,8 @@ const poppins: NextFont = Poppins({
 })
 
 
+
+
 // function handleClick(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
 //   event.preventDefault();
 //   console.info('You clicked a breadcrumb.');
@@ -126,7 +128,7 @@ export default function ResponsiveDrawer(props: Props) {
           <List>
           <ListItem  disablePadding>
           <Image className='navicn' src={Category} alt={'Dashboard'}/>
-          <Link className='navli' href={"/"}><ListItemText primary="Dashboard" /></Link>
+          <Link  className='navli' href={"/"}><ListItemText primary="Dashboard" /></Link>
         
       </ListItem>
 
@@ -174,12 +176,12 @@ export default function ResponsiveDrawer(props: Props) {
 
 
       <nav className='helpnav'>
-        <List className='helnavlist'>
+        <List sx={{mt:{lg:"24rem", xl: "37rem"}}} className='helnavlist'>
           <ListItem sx={{backgroundColor: "#efeff0" , height:"3rem", width:"25rem", borderRadius:"3rem", paddingBottom:"3rem", paddingTop:"2rem"}}  disablePadding>
 
             <Image className='navicn'   src={Headphones} alt={'support'}/>
 
-            <Link style={{fontSize: '1.5rem'}} className='navli' href={"/"}><ListItemText primary="Contact Support" /></Link>
+            <Link style={{fontSize: '1rem'}} className='navli' href={"/"}><ListItemText primary="Contact Support" /></Link>
 
         </ListItem>
 
@@ -200,7 +202,7 @@ export default function ResponsiveDrawer(props: Props) {
 
             <Image className='navicn'   src={Log} alt={'logout'}/>
 
-            <Link style={{fontSize: '8px'}} className='navli' href={"/"}><ListItemText primary="Logout" /></Link>
+            <Link className='navli' href={"/"}><ListItemText primary="Logout" /></Link>
 
         </ListItem>
 
@@ -219,18 +221,14 @@ export default function ResponsiveDrawer(props: Props) {
       <AppBar
         elevation={0}
         position="fixed"
-        // sx={{
-        //   width: { sm: `calc(100% - ${drawerWidthmd})` , lg: `calc(100% - ${drawerWidthlg})` },
-        //   ml: { sm: `${drawerWidthmd}` , lg:`${drawerWidthmd}` },
-        // }}
       >
-        <Toolbar className="headbar" sx={{ml: {md : '27rem', lg: '53.2rem', xl: '117rem' }}}>
+        <Toolbar className="headbar" sx={{ml: { md:"22rem",lg: '29.2rem', xl: '29rem' }}}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{  color: 'black', display: { sm: 'none' } }}
+            sx={{  color: 'black', display: { xs: 'block', md: 'none' } }}
           >
             <MenuIcon sx={{width: '3.8rem', height: '3.2rem'}} />
           </IconButton>
@@ -241,7 +239,7 @@ export default function ResponsiveDrawer(props: Props) {
           </Typography>
 
 
-          <Box sx={{ml : {xs: '1rem',sm: '1rem',  md : '27rem', lg: '53.2rem', xl: '117rem'}}}>
+          <Box sx={{ml : {xs: '1rem',sm: '1rem',  md : '34rem', lg: '46.2rem', xl: '108rem'}}}>
           <span className='secdash'>
           <select style={{ marginTop: '0.5rem', height:"2.8rem" , width:"9.5rem", fontSize: '1.2rem',backgroundColor: "#fef5ea", border: 'none'}} name="cars" id="cars">
                     <option value="volvo">Nannys Shop</option>
@@ -283,8 +281,8 @@ export default function ResponsiveDrawer(props: Props) {
         <Drawer
           variant="permanent"
           sx={{
-            display: { xs: 'none', sm: 'block' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: { sm:"30.2rem", md:"28rem", lg:"30rem",} },
+            display: { xs: 'none', md: 'block' },
+            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: { sm:"20.2rem", md:"22rem", lg:"30rem",} },
           }}
           open
         >
@@ -293,16 +291,16 @@ export default function ResponsiveDrawer(props: Props) {
       </Box>
       <Box
         component="main"
-        sx={{ mt: '2rem', width: { xs:"40rem", md:"78rem", lg:"96rem", xl: "126rem" }, ml:{xs:"3.5rem", sm:"25rem", md:"29rem", lg:"32rem", xl: "32rem"}}}
+        sx={{ mt: '2rem', width: { xs:"40rem", md:"78rem", lg:"96rem", xl: "157rem" }, ml:{xs:"1.5rem", sm:"25rem", md:"22rem", lg:"30rem", xl: "32rem"}}}
         // sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidthlg})` } }}
       >
 
         <Toolbar />
     
           <div className='section1'>
-            {/* <DashCard />
+            <DashCard />
             <DashCard2/>
-            <DashCard3/> */}
+            <DashCard3/>
           </div>
 
           <div className='section2'>

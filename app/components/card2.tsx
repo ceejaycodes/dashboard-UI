@@ -13,9 +13,9 @@ type Props = {}
 
 const DashCard2 = (props: Props) => {
   return (
-    <Card sx={{width:{xs:'34rem', md: "38rem"}, height:{xs:"18rem"}, mb:{xs:"1.2rem"}}}   className='card1'>
+    <Card sx={{width:{ xs:"38rem", md:"35rem", lg:"35rem", xl: "49rem"}, height:{xs:"18rem"}, mb:{xs:"1.2rem"}}}   className='card1'>
         <CardContent>
-          <span className='card11'>
+          <Box sx={{display: "flex", gap: {xs:"20rem",md:"10rem", lg:"15rem", xl: "29rem"}}}>
             <span style={{ borderRadius: "7px",padding: "8px", backgroundColor: "#fff7ed"}} >
                 <Image src={User} alt={""}/>
             </span>
@@ -27,18 +27,19 @@ const DashCard2 = (props: Props) => {
                     <option value="audi">Audi</option>
                 </select>
             </span>
-          </span>
+          </Box>
 
-          <span className='card12'>
-            <p>Customers</p>
-            <p style={{marginLeft:"12.5rem"}}>Active</p>
-          </span>
+          <Box  sx={{display: "flex",  gap: {xs:"13.5rem", md:"5.4rem", xl: "21rem"}}} className='card12'>
+            <Typography sx={{fontSize:{xs:"1.5rem"}}}>Customers</Typography>
+            <Typography sx={{fontSize:{xs:"1.5rem"}}} >Active</Typography>
+          </Box>
 
-          <span className='card13'>
-            <p>1,250</p>
-            <p style={{marginLeft:"10.7rem"}}>1,180</p>
-            <p style={{ marginTop: "0.8rem", marginLeft: "-5.5rem",color: "green", fontSize:"1rem"}} >+20.00%</p>
-          </span>
+          <Box sx={{gap:{xs:"17rem", md:"10rem", xl:"23rem"}}} className='card13'>
+            <Typography sx={{fontSize:{xs:"1.8rem", md: "1.2rem", xl:"2rem"}}}>1,250</Typography>
+            <Typography sx={{fontSize:{xs:"1.8rem", md: "1.2rem", xl:"2rem"}}}>1,180</Typography>
+            <Typography sx={{ mt: {xs:"0.8rem", md:"0.2rem", xl:"1rem"}, ml:{ xs: "-16.3rem", md:"-9.3rem", xl:"-22rem"},color: "green", fontSize:"1rem"}} >+20.00%</Typography>
+           
+          </Box>
         </CardContent>
       </Card>
   )

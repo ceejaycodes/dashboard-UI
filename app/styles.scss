@@ -54,21 +54,22 @@ a{
 
 .navicn{
     margin-top: 1.3rem;
-    height:2.6rem;
-    width: 3rem;
-    margin-left: 2rem;
+    height:2rem;
+    width: 2rem;
+    margin-left: 1rem;
     // margin-right: -13px;
 }
 
-.MuiListItemText-primary{
-    font-size: 1.8rem;
-    height: 2.8rem;
-    margin-bottom: 0.8rem;
-    margin-right: -22rem;
-}
+// .MuiListItemText-primary{
+//     font-size: 1.8rem;
+//     height: 2.8rem;
+//     margin-bottom: 0.8rem;
+//     margin-right: -22rem;
+// }
 
 
 .navbar{
+    margin-left: 2.5rem;
 
 li:hover{
     background-color: $action-color;
@@ -89,12 +90,10 @@ li:hover{
 
 .navli{
     margin-top: 1.8rem;
-    margin-left: 2.4rem;
+    margin-left: 0.5rem;
 
 
-    p{
-        font-size: 2.2rem;
-    }
+   
 
 
     p:hover{
@@ -136,6 +135,7 @@ li:hover{
 
 .helpnav{
     margin-top: 4.1rem;
+    margin-left: 2.5rem;
     
 }
 
@@ -243,27 +243,17 @@ li:hover{
 
 }
 
-.card11{
-    display: flex;
-    gap: 18.2rem;
-}
 
 
 .card12{
-    display: flex;
-    
-    font-size: 1.6rem;
-    align-items: flex-start;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     margin-bottom: 0.8rem;
     color: #8B8D97;
 
 }
 .card13{
-    font-size: 2.14rem;
-    font-weight: 500;
     display: flex;
-    gap: 5.8rem;
+    // gap: 5.8rem;
 }
 
 

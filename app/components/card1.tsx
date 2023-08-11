@@ -12,9 +12,9 @@ import { fontSize } from '@mui/system';
   
   export default function DashCard() {
     return (
-      <Card sx={{width:{xs:'34rem', md:"38rem"}, height:{xs:"18rem"}, mb:{xs:"1.2rem"}}}  className='card1'>
+      <Card sx={{width:{ xs:"38rem", md:"35rem", lg:"35rem", xl: "49rem" }, height:{xs:"18rem"}, mb:{xs:"1.2rem"}}}  className='card1'>
         <CardContent>
-          <span className='card11'>
+          <Box sx={{display: "flex", gap: {xs:"20rem",md:"10rem", lg:"15rem", xl: "29rem"}}}>
             <span style={{ borderRadius: "7px",padding: "8px", backgroundColor: "#eaedfd"}} >
                 <Image src={dashcard1img} alt={""}/>
             </span>
@@ -26,18 +26,18 @@ import { fontSize } from '@mui/system';
                     <option value="audi">Audi</option>
                 </select>
             </span>
-          </span>
+          </Box>
 
-          <span className='card12'>
-            <p>Sales</p>
-            <p style={{marginLeft:"16.5rem"}}>Volume</p>
-          </span>
+          <Box className="card12" sx={{display: "flex",  gap: {xs:"17.5rem", md:"9rem", xl: "24rem"}}}>
+            <Typography sx={{fontSize:{xs:"1.5rem"}}}>Sales</Typography>
+            <Typography sx={{fontSize:{xs:"1.5rem", }}}>Volume</Typography>
+          </Box>
 
-          <span className='card13'>
-            <p>₦4,000,000.00</p>
-            <p>450</p>
-            <p style={{ marginTop: "1rem", marginLeft: "-5.3rem",color: "green", fontSize:"1rem"}} >+20.00%</p>
-          </span>
+          <Box className='card13' sx={{gap:{xs:"10rem", md:"5rem", xl:"15rem"}}}>
+            <Typography sx={{fontSize:{xs:"1.8rem", md: "1.2rem", xl:"2rem"}}}>₦4,000,000.00</Typography>
+            <Typography sx={{fontSize:{xs:"1.8rem", md: "1.2rem", xl:"2rem"}}}>450</Typography>
+            <Typography sx={{ mt: {xs:"0.7rem", md:"0.2rem", xl:"1rem"}, ml:{ xs: "-9.3rem", md:"-4.3rem", xl:"-14rem"},color: "green", fontSize:"1rem"}} >+20.00%</Typography>
+          </Box>
         </CardContent>
       </Card>
     );
