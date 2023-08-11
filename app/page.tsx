@@ -307,7 +307,7 @@ export default function ResponsiveDrawer(props: Props) {
             <div className='sec2div1'>
               <div className='sec2div1box1'>
                 <div>
-                  {/* <Piechart/> */}
+                  <Piechart/>
                 </div>
                 <div className='spaninbox'>
                   {/* <span><Card4/></span>

@@ -8,7 +8,7 @@ type Props = {}
 
 const Piechart = (props: Props) => {
   return (
-    <Card sx={{ height:{xs:"37.3rem"},width:{xs:'34rem', md:"38rem"}}} className='piechar'>
+    <Card sx={{ height:{xs:"37.3rem"},width:{ xs:"38rem", md:"23rem", lg:"29rem", xl: "47rem" }}} >
         <CardContent>
         <span className='summary'><p style={{fontSize:"1.7rem",marginLeft:"1rem"}}>Marketing</p> 
         
