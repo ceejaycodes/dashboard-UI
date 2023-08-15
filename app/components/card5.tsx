@@ -1,4 +1,4 @@
-import { Card, CardContent } from '@mui/material';
+import { Box, Card, CardContent, Typography } from '@mui/material';
 import Image from 'next/image';
 import Cart from '../../public/images/cart.svg';
 import React from 'react';
@@ -7,9 +7,9 @@ type Props = {}
 
 const Card5 = (props: Props) => {
   return (
-    <Card sx={{width:{xs:'34rem', md:"38rem"}}} className='card5'>
+    <Card sx={{mt:{xs:"2rem", md:"0.2rem"},width:{xs:'38rem', md:"24rem", lg:"29rem", xl:"46rem"}, ml:{md:"1rem"}}} className='card5'>
         <CardContent>   
-            <span className='card11'>
+        <Box sx={{display: "flex", gap: {xs:"19rem",md:"10rem", lg:"15rem", xl: "29rem"}}}>
             <span style={{ borderRadius: "7px",padding: "8px", backgroundColor: "#fff7ed"}} >
                 <Image src={Cart} alt={""}/>
             </span>
@@ -21,18 +21,18 @@ const Card5 = (props: Props) => {
                     <option value="audi">Audi</option>
                 </select>
             </span>
-          </span>
+          </Box>
 
-          <span className='card12'>
-            <p style={{color:'red'}}>Abandoned Cart</p>
-            <p style={{marginLeft:"9.5rem"}}>Customers</p>
-          </span>
+          <Box sx={{display: "flex",  gap: {xs:"13.5rem", md:"5.4rem", xl: "18rem"}}} className='card12'>
+            <Typography sx={{fontSize:{xs:"1.5rem"}, color:'red'}}>Abandoned Cart</Typography>
+            <Typography sx={{fontSize:{xs:"1.5rem"}}}>Customers</Typography>
+          </Box>
 
-          <span className='card13'>
-            <p>20%</p> <p style={{ marginTop: "2px", marginLeft: "-5rem",color: "green", fontSize:"12px"}} >+0.00%</p>
-            <p style={{marginLeft:"87px"}}>30</p>
+          <Box sx={{gap:{xs:"19rem", md:"9.6rem", xl:"23rem"}}} className='card13'>
+            <Typography sx={{fontSize:{xs:"1.5rem"}}}>20%</Typography> <Typography sx={{ marginTop: {xs: "0.7rem", md:"0.5rem"}, marginLeft: {xs:"-18rem", md:"-9rem", xl:"-22rem"},color: "green"}} >+0.00%</Typography>
+            <Typography sx={{fontSize:{xs:"1.5rem"}}}>30</Typography>
             
-          </span>
+          </Box>
             
         </CardContent>
     </Card>

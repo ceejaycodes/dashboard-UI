@@ -90,8 +90,6 @@ const IconBreadcrumbs: React.FC = ()=> {
 
 
 
-// const drawerWidthmd = '20rem';
-// const drawerWidthlg = '28.8rem';
 
 interface Props {
   /**
@@ -310,8 +308,8 @@ export default function ResponsiveDrawer(props: Props) {
                   <Piechart/>
                 </div>
                 <div className='spaninbox'>
-                  {/* <span><Card4/></span>
-                  <span><Card5/></span> */}
+                  <span><Card4/></span>
+                  <span><Card5/></span>
                 </div>
               </div>
 
@@ -322,7 +320,7 @@ export default function ResponsiveDrawer(props: Props) {
               </div> 
 {/*  */}
              <div className='sec2div2'>
-              {/* <Recent/> */}
+              <Recent/>
             </div>
           </div>
       </Box>

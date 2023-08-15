@@ -1,32 +1,32 @@
-import { Card, CardContent } from '@mui/material';
+import { Box, Card, CardContent, Typography } from '@mui/material';
 import React from 'react';
 import Image from 'next/image';
 import Folder1 from '../../public/images/Folder1.svg'; 
 
-type Props = {}
+type Props = {} 
 
 const Card4: React.FC = (props: Props) => {
   return (
-    <Card sx={{width:{xs:'34rem', md:"38rem"}}} className='card4'>
+    <Card sx={{mt:{xs:"2rem", md:"0.2rem"},width:{xs:'38rem', md:"24rem", lg:"29rem", xl:"46rem"}, ml:{md:"1rem"}}} className='card4'>
         <CardContent>
 
-        <span className='card11'>
+         <Box sx={{display: "flex", gap: {xs:"2rem",md:"10rem", lg:"15rem", xl: "29rem"}}}>
             <span style={{ borderRadius: "7px",padding: "8px", backgroundColor: "#7087f3"}} >
                 <Image src={Folder1} alt={""}/>
             </span>
          
-          </span>
+          </Box>
 
-          <span className='card12'>
-            <p>All Products</p>
-            <p style={{marginLeft:"9.5rem"}}>Active</p>
-          </span>
+          <Box sx={{display: "flex",  gap: {xs:"13.5rem", md:"3.4rem", xl: "19rem"}}} className='card12'>
+            <Typography sx={{fontSize:{xs:"1.5rem"}}}>All Products</Typography>
+            <Typography sx={{fontSize:{xs:"1.5rem"},marginLeft:"4.5rem"}}>Active</Typography>
+          </Box>
 
-          <span className='card13'>
-            <p>45</p>
-            <p style={{marginLeft:"11rem"}}>32</p>
-            <p style={{ marginTop: "1rem", marginLeft: "-5rem",color: "white", fontSize:"12px"}} >+24%</p>
-          </span>
+          <Box sx={{gap:{xs:"17rem", md:"10rem", xl:"23rem"}}} className='card13'>
+            <Typography sx={{fontSize:{xs:"1.5rem"}}}>45</Typography>
+            <Typography  sx={{fontSize:{xs:"1.5rem"}, ml:{xs:"8rem",md:"4rem", lg:"7rem"}}}>32</Typography>
+            <Typography  sx={{ marginTop: "0.3rem", ml: {xs:"-16.5rem",  md:"-9.5rem", lg:"-9.3rem", xl:"-22rem"},color: "white", fontSize:"12px"}} >+24%</Typography>
+          </Box>
             
         </CardContent>
     </Card>
