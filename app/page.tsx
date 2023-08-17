@@ -237,7 +237,7 @@ export default function ResponsiveDrawer(props: Props) {
           </Typography>
 
 
-          <Box sx={{ml : {xs: '1rem',sm: '1rem',  md : '34rem', lg: '46.2rem', xl: '108rem'}}}>
+          <Box sx={{ml : {xs: '5rem',sm: '1rem',  md : '34.5rem', lg: '53.2rem', xl: '117.5rem'}}}>
           <span className='secdash'>
           <select style={{ marginTop: '0.5rem', height:"2.8rem" , width:"9.5rem", fontSize: '1.2rem',backgroundColor: "#fef5ea", border: 'none'}} name="cars" id="cars">
                     <option value="volvo">Nannys Shop</option>

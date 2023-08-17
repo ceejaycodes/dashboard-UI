@@ -1,7 +1,7 @@
 'use client'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
-import Header from './header';
+
 
 const poppins = Poppins({
   weight: ["200","400","600"],

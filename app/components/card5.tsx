@@ -9,7 +9,7 @@ const Card5 = (props: Props) => {
   return (
     <Card sx={{mt:{xs:"2rem", md:"0.2rem"},width:{xs:'38rem', md:"24rem", lg:"29rem", xl:"46rem"}, ml:{md:"1rem"}}} className='card5'>
         <CardContent>   
-        <Box sx={{display: "flex", gap: {xs:"19rem",md:"10rem", lg:"15rem", xl: "29rem"}}}>
+        <Box sx={{display: "flex", gap: {xs:"19rem",md:"10rem", lg:"12rem", xl: "29rem"}}}>
             <span style={{ borderRadius: "7px",padding: "8px", backgroundColor: "#fff7ed"}} >
                 <Image src={Cart} alt={""}/>
             </span>

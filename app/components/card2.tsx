@@ -29,15 +29,15 @@ const DashCard2 = (props: Props) => {
             </span>
           </Box>
 
-          <Box  sx={{display: "flex",  gap: {xs:"13.5rem", md:"5.4rem", xl: "21rem"}}} className='card12'>
+          <Box  sx={{display: "flex",  gap: {xs:"13.5rem", md:"5.4rem", lg:"10.3rem", xl: "21rem"}}} className='card12'>
             <Typography sx={{fontSize:{xs:"1.5rem"}}}>Customers</Typography>
             <Typography sx={{fontSize:{xs:"1.5rem"}}} >Active</Typography>
           </Box>
 
-          <Box sx={{gap:{xs:"17rem", md:"10rem", xl:"23rem"}}} className='card13'>
+          <Box sx={{gap:{xs:"17rem", md:"10rem",lg:"13.3rem",xl:"23rem"}}} className='card13'>
             <Typography sx={{fontSize:{xs:"1.8rem", md: "1.2rem", xl:"2rem"}}}>1,250</Typography>
             <Typography sx={{fontSize:{xs:"1.8rem", md: "1.2rem", xl:"2rem"}}}>1,180</Typography>
-            <Typography sx={{ mt: {xs:"0.8rem", md:"0.2rem", xl:"1rem"}, ml:{ xs: "-16.3rem", md:"-9.3rem", xl:"-22rem"},color: "green", fontSize:"1rem"}} >+20.00%</Typography>
+            <Typography sx={{ mt: {xs:"0.8rem", md:"0.2rem", lg:"0.3rem", xl:"1rem"}, ml:{ xs: "-16.3rem", md:"-9.3rem", lg:"-13rem", xl:"-22rem"},color: "green", fontSize:"0.8rem"}} >+20.00%</Typography>
            
           </Box>
         </CardContent>

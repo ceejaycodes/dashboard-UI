@@ -245,7 +245,7 @@ li:hover{
 }
 .card13{
     display: flex;
-    // gap: 5.8rem;
+    margin-left: 0.5rem;
 }
 
 
@@ -345,12 +345,12 @@ li:hover{
 
     .section1{
         display: flex;
-        margin-bottom: 2rem;
         margin-left: 1rem;
     }
 
     .section2{
         margin-left: 1rem;
+        flex-wrap: wrap;
         flex-direction: row;
     }
 

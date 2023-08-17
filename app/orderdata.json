@@ -1,0 +1,55 @@
+
+ [
+                {
+                    "id": "1",
+                "src": "/../../images/blackiphone.png",
+                "name":"Iphone 14 pro",
+                "price": "1,223,000",
+                "date": " 12th August, 2023",
+                "status":"Pending"
+                },
+                {
+                    "id": "2",
+                "src": "/../../images/blackiphone.png",
+                "name":"Iphone 12",
+                "price": "350,000",
+                "date": "9th August, 2023",
+                "status":"Pending"
+                },
+                {
+                    "id": "3",
+                    "src": "/../../images/blackiphone.png",
+                    "name":"Iphone 13 pro max",
+                    "price": "650,000",
+                    "date": "25t June, 2023",
+                    "status":"Completed"
+                    }
+                ,
+                {
+                    "id": "4",
+                    "src": "/../../images/blackiphone.png",
+                    "name":"Iphone 12 pro",
+                    "price": "400,000",
+                    "date": "14th July, 2023",
+                    "status":"Completed"
+                    }
+                ,
+                {
+                    "id": "5",
+                    "src": "/../../images/blackiphone.png",
+                    "name":"Iphone 13",
+                    "price": "550,000",
+                    "date": "26th February, 2023",
+                    "status":"Pending"
+                    }
+                ,
+                {
+                    "id": "6",
+                    "src": "/../../images/blackiphone.png",
+                    "name":"Iphone 11 pro max",
+                    "price": "350,000",
+                    "date": "12th July, 2023",
+                    "status":"Completed"
+                    }
+            ]
+    

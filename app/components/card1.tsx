@@ -28,15 +28,15 @@ import { fontSize } from '@mui/system';
             </span>
           </Box>
 
-          <Box className="card12" sx={{display: "flex",  gap: {xs:"17.5rem", md:"9rem", xl: "24rem"}}}>
+          <Box className="card12" sx={{display: "flex",  gap: {xs:"17.5rem", md:"9rem", lg:"13rem",xl: "24rem"}}}>
             <Typography sx={{fontSize:{xs:"1.5rem"}}}>Sales</Typography>
             <Typography sx={{fontSize:{xs:"1.5rem", }}}>Volume</Typography>
           </Box>
 
-          <Box className='card13' sx={{gap:{xs:"10rem", md:"5rem", xl:"15rem"}}}>
-            <Typography sx={{fontSize:{xs:"1.8rem", md: "1.2rem", xl:"2rem"}}}>₦4,000,000.00</Typography>
+          <Box className='card13' sx={{gap:{xs:"10rem", md:"5rem", lg:"11rem", xl:"15rem"}}}>
+            <Typography sx={{fontSize:{xs:"1.8rem", md: "1.2rem", lg: "1rem", xl:"2rem"}}}>₦4,000,000.00</Typography>
             <Typography sx={{fontSize:{xs:"1.8rem", md: "1.2rem", xl:"2rem"}}}>450</Typography>
-            <Typography sx={{ mt: {xs:"0.7rem", md:"0.2rem", xl:"1rem"}, ml:{ xs: "-9.3rem", md:"-4.3rem", xl:"-14rem"},color: "green", fontSize:"1rem"}} >+20.00%</Typography>
+            <Typography sx={{ mt: {xs:"0.7rem", md:"0.2rem", lg: "0.5rem", xl:"1rem"}, ml:{ xs: "-9.3rem", md:"-4.3rem", xl:"-14rem"},color: "green", fontSize:"0.7rem"}} >+20.00%</Typography>
           </Box>
         </CardContent>
       </Card>
