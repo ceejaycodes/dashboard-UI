@@ -166,15 +166,7 @@ li:hover{
 }
 
 
-// .card4{
-//     background-color: $action-color;
-//     border-radius: 1.3rem;
-// }
-
-
-
 .card4{
-    border-radius: 1.1rem;
     background-color: $action-color;
     border-radius: 1.3rem;
     margin-bottom: 1.3rem;
@@ -385,12 +377,10 @@ li:hover{
 
 
     .bottomchart{
-        width: 100%;
-        height: 100;
+        border-radius: 1rem;
+   
     }
 
-
-    
 
     .ordercard{
         margin-left: 1rem;

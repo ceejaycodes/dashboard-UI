@@ -314,7 +314,7 @@ export default function ResponsiveDrawer(props: Props) {
               </div>
 
               <div className='sec2div1box2'>
-                {/* <Bottomchart/> */}
+                <Bottomchart/>
               </div>
 
               </div> 

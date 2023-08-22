@@ -13,7 +13,7 @@ type Props = {}
 
 const Bottomchart: React.FC = (props: Props) => {
   return (
-    <Card  className='bottomchart'>
+    <Card sx={{mt:{xs:"2rem", md:"0.2rem"},width:{xs:'38rem', md:"48rem", lg:"58rem", xl:"92rem"}, ml:{md:"1rem"}}}  className='bottomchart'>
     <CardContent>
         <span className='summary'><p>Summary</p> 
          <select style={{ paddingRight:'17px', paddingBottom:'1.2px', borderRadius:"4px", marginLeft:"17px" ,backgroundColor: "#eaedfd", border: 'none'}} name="cars" id="cars">
