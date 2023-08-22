@@ -15,19 +15,25 @@ const Bottomchart: React.FC = (props: Props) => {
   return (
     <Card sx={{mt:{xs:"2rem", md:"0.2rem"},width:{xs:'38rem', md:"48rem", lg:"58rem", xl:"92rem"}, ml:{md:"1rem"}}}  className='bottomchart'>
     <CardContent>
-        <span className='summary'><p>Summary</p> 
-         <select style={{ paddingRight:'17px', paddingBottom:'1.2px', borderRadius:"4px", marginLeft:"17px" ,backgroundColor: "#eaedfd", border: 'none'}} name="cars" id="cars">
+        <span className='summary'><Typography sx={{fontSize:{xs:"1.4rem", md:"1.5rem",lg:"1.7rem", xl:"2.5rem"},ml:{xs:"1rem", md:"-0.2rem"}}}>Summary</Typography> 
+        <Box sx={{mt:{xs:"-0.7rem",md:"-0.8rem",lg:"-0.5rem",xl:"0.2rem"}}}>
+         <select style={{ paddingRight:'1rem', paddingBottom:'1.2px', borderRadius:"1rem", marginLeft:"1rem" ,backgroundColor: "#eaedfd", border: 'none'}} name="cars" id="cars">
                     <option value="volvo">Sales</option>
                     <option value="saab">Saab</option>
                     <option value="opel">Opel</option>
                     <option value="audi">Audi</option>
                 </select>
-                  <select style={{ marginLeft:"377px", color: "black", border: 'none'}} name="cars" id="cars">
+                </Box>
+
+                <Box sx={{ml: {xs:"10rem", md:"21rem", lg:"30rem", xl:"60rem"}}}>
+                  <select style={{  color: "black", border: 'none'}} name="cars" id="cars">
                     <option value="volvo">Last 7 Days</option>
                     <option value="saab">Saab</option>
                     <option value="opel">Opel</option>
                     <option value="audi">Audi</option>
-                </select></span>
+                </select>
+                </Box>
+                </span>
 
         <BarChart
       series={[
