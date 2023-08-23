@@ -91,15 +91,15 @@ const IconBreadcrumbs: React.FC = ()=> {
 
 
 
-interface Props {
+interface winProps {
   /**
    * Injected by the documentation to work in an iframe.
    * You won't need it on your project.
    */
-  window?: () => Window;
+  window: () => Window;
 }
 
-export default function ResponsiveDrawer(props: Props) {
+ export default function Page(props: winProps) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
